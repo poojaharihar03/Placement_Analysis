@@ -80,37 +80,37 @@ elif options == 'Barcharts':
         sns.barplot(x='Gender', y='Sno', data=df, palette='Accent')
     elif selected_chart == 'SSC Board vs Sno':
         sns.barplot(x='SSC Board', y='Sno', data=df, palette='Greys')
-    elif selected_chart == 'SSC Board vs Sno (hue=Gender)':
+    elif selected_chart == 'SSC Board vs Sno':
         sns.barplot(x='SSC Board', y='Sno', data=df, hue='Gender')
     elif selected_chart == 'HSC Board vs Sno':
         sns.barplot(x='HSC Board', y='Sno', data=df, palette='terrain')
-    elif selected_chart == 'HSC Board vs Sno (hue=Gender)':
+    elif selected_chart == 'HSC Board vs Sno':
         sns.barplot(x='HSC Board', y='Sno', data=df, hue='Gender')
     elif selected_chart == '12th Stream vs Sno':
         sns.barplot(x='12th Stream', y='Sno', data=df, palette='icefire')
-    elif selected_chart == '12th Stream vs Sno (hue=Gender)':
+    elif selected_chart == '12th Stream vs Sno':
         sns.barplot(x='12th Stream', y='Sno', data=df, hue='Gender')
     elif selected_chart == 'Degree stream vs Sno':
         sns.barplot(x='Degree stream', y='Sno', data=df, palette='terrain')
-    elif selected_chart == 'Degree stream vs Sno (hue=Gender)':
+    elif selected_chart == 'Degree stream vs Sno ':
         sns.barplot(x='Degree stream', y='Sno', data=df, hue='Gender')
     elif selected_chart == 'Work exp vs Sno':
         sns.barplot(x='Work exp', y='Sno', data=df, palette='BuGn')
-    elif selected_chart == 'Work exp vs Sno (hue=Gender)':
+    elif selected_chart == 'Work exp vs Sno ':
         sns.barplot(x='Work exp', y='Sno', data=df, hue='Gender')
     elif selected_chart == 'Specialisation vs Sno':
         sns.barplot(x='specialisation', y='Sno', data=df, palette='gist_heat')
     elif selected_chart == 'Status vs Sno':
         sns.barplot(x='status', y='Sno', data=df, palette='Blues_d')
-    elif selected_chart == 'Gender vs 10th % (hue=Work exp)':
+    elif selected_chart == 'Gender vs 10th % ':
         sns.barplot(x='Gender', y='10th %', data=df, hue='Work exp', palette='icefire')
-    elif selected_chart == 'SSC Board vs 12th % (hue=specialisation)':
+    elif selected_chart == 'SSC Board vs 12th %':
         sns.barplot(x='SSC Board', y='12th %', data=df, hue='specialisation', palette='magma')
-    elif selected_chart == 'HSC Board vs Degree % (hue=status)':
+    elif selected_chart == 'HSC Board vs Degree % ':
         sns.barplot(x='HSC Board', y='Degree %', data=df, hue='status', palette='Accent')
-    elif selected_chart == '12th Stream vs Mba % (hue=SSC Board)':
+    elif selected_chart == '12th Stream vs Mba %':
         sns.barplot(x='12th Stream', y='Mba %', data=df, hue='SSC Board', palette='viridis')
-    elif selected_chart == 'Degree stream vs Salary (hue=Gender)':
+    elif selected_chart == 'Degree stream vs Salary':
         sns.barplot(x='Degree stream', y='salary', data=df, hue='Gender', palette='terrain')
 
     st.pyplot(plt)
